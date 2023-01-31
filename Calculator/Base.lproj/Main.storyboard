@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,23 +16,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="PdE-ll-M4f">
-                                <rect key="frame" x="1" y="60" width="428" height="150"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="3hd-2Z-6t1"/>
-                                </constraints>
+                                <rect key="frame" x="1" y="60" width="409" height="288"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="100"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.99215686319999996" green="0.94509804249999996" blue="0.88235294819999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TPo-H6-IRD">
-                                <rect key="frame" x="1" y="218" width="428" height="679"/>
+                                <rect key="frame" x="1" y="356" width="428" height="541"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RrN-U1-y1j">
-                                        <rect key="frame" x="1" y="1" width="426" height="134.66666666666666"/>
+                                        <rect key="frame" x="0.0" y="1" width="428" height="107"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B7N-9i-Ftj">
-                                                <rect key="frame" x="0.0" y="0.0" width="106.66666666666667" height="134.66666666666666"/>
-                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="107" height="107"/>
+                                                <color key="backgroundColor" red="0.26101085480000003" green="0.24536830530000001" blue="0.24291648760000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="107" id="coq-sH-6cU"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="50"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="AC"/>
@@ -42,15 +41,18 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jOP-yF-obZ">
-                                                <rect key="frame" x="106.66666666666669" y="0.0" width="106.33333333333331" height="134.66666666666666"/>
-                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="107" y="0.0" width="107" height="107"/>
+                                                <color key="backgroundColor" red="0.26101085480000003" green="0.24536830530000001" blue="0.24291648760000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="50"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="+/-"/>
+                                                <connections>
+                                                    <action selector="plusOrMinus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Il-1P-xwb"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b53-md-rkq">
-                                                <rect key="frame" x="212.99999999999997" y="0.0" width="106.66666666666666" height="134.66666666666666"/>
-                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="214" y="0.0" width="107" height="107"/>
+                                                <color key="backgroundColor" red="0.26101085480000003" green="0.24536830530000001" blue="0.24291648760000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="50"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="%"/>
@@ -59,8 +61,8 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64k-3y-vUB">
-                                                <rect key="frame" x="319.66666666666669" y="0.0" width="106.33333333333331" height="134.66666666666666"/>
-                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="321" y="0.0" width="107" height="107"/>
+                                                <color key="backgroundColor" red="0.94901961089999998" green="0.63921570780000003" blue="0.2352941036" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="50"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="+"/>
@@ -69,6 +71,7 @@
                                                 </connections>
                                             </button>
                                         </subviews>
+                                        <color key="tintColor" red="0.99215686319999996" green="0.94509804249999996" blue="0.88235294819999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstItem="64k-3y-vUB" firstAttribute="width" secondItem="B7N-9i-Ftj" secondAttribute="width" id="33T-X4-LQL"/>
                                             <constraint firstItem="b53-md-rkq" firstAttribute="width" secondItem="B7N-9i-Ftj" secondAttribute="width" id="rEf-kd-OgZ"/>
@@ -76,11 +79,11 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Uj-JJ-Ja9">
-                                        <rect key="frame" x="1" y="136.66666666666669" width="426" height="134.66666666666669"/>
+                                        <rect key="frame" x="0.0" y="109" width="428" height="107"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acm-ek-qcJ">
-                                                <rect key="frame" x="0.0" y="0.0" width="106.66666666666667" height="134.66666666666666"/>
-                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="107" height="107"/>
+                                                <color key="backgroundColor" red="0.40392160420000001" green="0.3686274886" blue="0.36470589040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="50"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="7"/>
@@ -89,8 +92,8 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A1d-1Q-fDp">
-                                                <rect key="frame" x="106.66666666666669" y="0.0" width="106.33333333333331" height="134.66666666666666"/>
-                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="107" y="0.0" width="107" height="107"/>
+                                                <color key="backgroundColor" red="0.40392160420000001" green="0.3686274886" blue="0.36470589040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="50"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="9"/>
@@ -99,8 +102,8 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RPV-hx-V9y">
-                                                <rect key="frame" x="212.99999999999997" y="0.0" width="106.66666666666666" height="134.66666666666666"/>
-                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="214" y="0.0" width="107" height="107"/>
+                                                <color key="backgroundColor" red="0.40392160420000001" green="0.3686274886" blue="0.36470589040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="50"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="8"/>
@@ -109,8 +112,8 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IJd-b2-8R8">
-                                                <rect key="frame" x="319.66666666666669" y="0.0" width="106.33333333333331" height="134.66666666666666"/>
-                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="321" y="0.0" width="107" height="107"/>
+                                                <color key="backgroundColor" red="0.94901961089999998" green="0.63921570780000003" blue="0.2352941036" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="50"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="-"/>
@@ -119,6 +122,7 @@
                                                 </connections>
                                             </button>
                                         </subviews>
+                                        <color key="tintColor" red="0.99215686319999996" green="0.94509804249999996" blue="0.88235294819999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstItem="A1d-1Q-fDp" firstAttribute="width" secondItem="acm-ek-qcJ" secondAttribute="width" id="N88-UO-ZoS"/>
                                             <constraint firstItem="RPV-hx-V9y" firstAttribute="width" secondItem="acm-ek-qcJ" secondAttribute="width" id="V8y-mF-S8u"/>
@@ -126,11 +130,11 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YIk-xA-Tiy">
-                                        <rect key="frame" x="1" y="272.33333333333331" width="426" height="134.33333333333331"/>
+                                        <rect key="frame" x="0.0" y="217" width="428" height="107"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4nE-wS-ZWb">
-                                                <rect key="frame" x="0.0" y="0.0" width="106.66666666666667" height="134.33333333333334"/>
-                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="107" height="107"/>
+                                                <color key="backgroundColor" red="0.40392160420000001" green="0.3686274886" blue="0.36470589040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="50"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="4"/>
@@ -139,8 +143,8 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CJB-SH-M14">
-                                                <rect key="frame" x="106.66666666666669" y="0.0" width="106.33333333333331" height="134.33333333333334"/>
-                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="107" y="0.0" width="107" height="107"/>
+                                                <color key="backgroundColor" red="0.40392160420000001" green="0.3686274886" blue="0.36470589040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="50"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="5"/>
@@ -149,8 +153,8 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EgL-SS-g6m">
-                                                <rect key="frame" x="212.99999999999997" y="0.0" width="106.66666666666666" height="134.33333333333334"/>
-                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="214" y="0.0" width="107" height="107"/>
+                                                <color key="backgroundColor" red="0.40392160420000001" green="0.3686274886" blue="0.36470589040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="50"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="6"/>
@@ -159,8 +163,8 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zoH-Uz-FgO" userLabel="multiply">
-                                                <rect key="frame" x="319.66666666666669" y="0.0" width="106.33333333333331" height="134.33333333333334"/>
-                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="321" y="0.0" width="107" height="107"/>
+                                                <color key="backgroundColor" red="0.94901961089999998" green="0.63921570780000003" blue="0.2352941036" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="50"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="×"/>
@@ -169,6 +173,7 @@
                                                 </connections>
                                             </button>
                                         </subviews>
+                                        <color key="tintColor" red="0.99215686319999996" green="0.94509804249999996" blue="0.88235294819999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstItem="CJB-SH-M14" firstAttribute="width" secondItem="4nE-wS-ZWb" secondAttribute="width" id="89b-AO-1za"/>
                                             <constraint firstItem="EgL-SS-g6m" firstAttribute="width" secondItem="4nE-wS-ZWb" secondAttribute="width" id="HCT-IA-cGv"/>
@@ -176,11 +181,11 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="efr-sM-FtE">
-                                        <rect key="frame" x="1" y="407.66666666666663" width="426" height="134.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="325" width="428" height="107"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddW-Qw-yVI">
-                                                <rect key="frame" x="0.0" y="0.0" width="106.66666666666667" height="134.66666666666666"/>
-                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="107" height="107"/>
+                                                <color key="backgroundColor" red="0.40392160420000001" green="0.3686274886" blue="0.36470589040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="50"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="1"/>
@@ -189,8 +194,8 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZNb-To-BMm">
-                                                <rect key="frame" x="106.66666666666669" y="0.0" width="106.33333333333331" height="134.66666666666666"/>
-                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="107" y="0.0" width="107" height="107"/>
+                                                <color key="backgroundColor" red="0.40392160420000001" green="0.3686274886" blue="0.36470589040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="50"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="2"/>
@@ -199,8 +204,8 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ios-bZ-S0a">
-                                                <rect key="frame" x="212.99999999999997" y="0.0" width="106.66666666666666" height="134.66666666666666"/>
-                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="214" y="0.0" width="107" height="107"/>
+                                                <color key="backgroundColor" red="0.40392160420000001" green="0.3686274886" blue="0.36470589040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="50"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="3"/>
@@ -208,9 +213,9 @@
                                                     <action selector="numberPresed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jdy-TD-9hf"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ll8-wv-vCy" userLabel="divide">
-                                                <rect key="frame" x="319.66666666666669" y="0.0" width="106.33333333333331" height="134.66666666666666"/>
-                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ll8-wv-vCy">
+                                                <rect key="frame" x="321" y="0.0" width="107" height="107"/>
+                                                <color key="backgroundColor" red="0.94901961089999998" green="0.63921570780000003" blue="0.2352941036" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="50"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="÷"/>
@@ -219,6 +224,7 @@
                                                 </connections>
                                             </button>
                                         </subviews>
+                                        <color key="tintColor" red="0.99215686319999996" green="0.94509804249999996" blue="0.88235294819999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstItem="ZNb-To-BMm" firstAttribute="width" secondItem="ddW-Qw-yVI" secondAttribute="width" id="Myd-D0-Rly"/>
                                             <constraint firstItem="Ios-bZ-S0a" firstAttribute="width" secondItem="ddW-Qw-yVI" secondAttribute="width" id="NT0-n4-xT4"/>
@@ -226,18 +232,21 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9XX-NT-dal">
-                                        <rect key="frame" x="1" y="543.33333333333337" width="426" height="134.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="433" width="428" height="107"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sqw-Za-ds7" userLabel="x.squareroot">
-                                                <rect key="frame" x="0.0" y="0.0" width="106.66666666666667" height="134.66666666666666"/>
-                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="107" height="107"/>
+                                                <color key="backgroundColor" red="0.40392160420000001" green="0.3686274886" blue="0.36470589040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="50"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="√"/>
+                                                <connections>
+                                                    <action selector="square:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X20-AW-iSb"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="To4-No-G1f">
-                                                <rect key="frame" x="106.66666666666669" y="0.0" width="106.33333333333331" height="134.66666666666666"/>
-                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="107" y="0.0" width="107" height="107"/>
+                                                <color key="backgroundColor" red="0.40392160420000001" green="0.3686274886" blue="0.36470589040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="50"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="0"/>
@@ -245,16 +254,19 @@
                                                     <action selector="numberPresed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GlM-kL-zVU"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vHK-E9-DGT">
-                                                <rect key="frame" x="212.99999999999997" y="0.0" width="106.66666666666666" height="134.66666666666666"/>
-                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vHK-E9-DGT">
+                                                <rect key="frame" x="214" y="0.0" width="107" height="107"/>
+                                                <color key="backgroundColor" red="0.40392160420000001" green="0.3686274886" blue="0.36470589040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="100"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" title=","/>
+                                                <state key="normal" title="."/>
+                                                <connections>
+                                                    <action selector="addDot:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I3G-e0-HOk"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iKr-QH-ICa">
-                                                <rect key="frame" x="319.66666666666669" y="0.0" width="106.33333333333331" height="134.66666666666666"/>
-                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="321" y="0.0" width="107" height="107"/>
+                                                <color key="backgroundColor" red="0.94901961089999998" green="0.63921570780000003" blue="0.2352941036" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="50"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="="/>
@@ -263,6 +275,7 @@
                                                 </connections>
                                             </button>
                                         </subviews>
+                                        <color key="tintColor" red="0.99215686319999996" green="0.94509804249999996" blue="0.88235294819999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstItem="vHK-E9-DGT" firstAttribute="width" secondItem="Sqw-Za-ds7" secondAttribute="width" id="MdZ-lX-aSz"/>
                                             <constraint firstItem="iKr-QH-ICa" firstAttribute="width" secondItem="Sqw-Za-ds7" secondAttribute="width" id="XyN-OM-TNf"/>
@@ -270,35 +283,34 @@
                                         </constraints>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="9XX-NT-dal" firstAttribute="height" secondItem="RrN-U1-y1j" secondAttribute="height" id="0v2-eM-ify"/>
                                     <constraint firstItem="RrN-U1-y1j" firstAttribute="top" secondItem="TPo-H6-IRD" secondAttribute="top" constant="1" id="5cm-Lj-UO7"/>
                                     <constraint firstItem="efr-sM-FtE" firstAttribute="top" secondItem="YIk-xA-Tiy" secondAttribute="bottom" constant="1" id="DiK-3Z-wem"/>
-                                    <constraint firstAttribute="trailing" secondItem="RrN-U1-y1j" secondAttribute="trailing" constant="1" id="DqN-X8-q1R"/>
-                                    <constraint firstAttribute="trailing" secondItem="efr-sM-FtE" secondAttribute="trailing" constant="1" id="ItP-hq-6ob"/>
-                                    <constraint firstAttribute="trailing" secondItem="6Uj-JJ-Ja9" secondAttribute="trailing" constant="1" id="Jjb-hx-sUX"/>
-                                    <constraint firstAttribute="trailing" secondItem="9XX-NT-dal" secondAttribute="trailing" constant="1" id="KoZ-YX-TaB"/>
+                                    <constraint firstAttribute="trailing" secondItem="RrN-U1-y1j" secondAttribute="trailing" id="DqN-X8-q1R"/>
+                                    <constraint firstAttribute="trailing" secondItem="efr-sM-FtE" secondAttribute="trailing" id="ItP-hq-6ob"/>
+                                    <constraint firstAttribute="trailing" secondItem="6Uj-JJ-Ja9" secondAttribute="trailing" id="Jjb-hx-sUX"/>
+                                    <constraint firstAttribute="trailing" secondItem="9XX-NT-dal" secondAttribute="trailing" id="KoZ-YX-TaB"/>
                                     <constraint firstItem="6Uj-JJ-Ja9" firstAttribute="top" secondItem="RrN-U1-y1j" secondAttribute="bottom" constant="1" id="MH2-tH-BfJ"/>
                                     <constraint firstAttribute="bottom" secondItem="9XX-NT-dal" secondAttribute="bottom" constant="1" id="PlY-SY-Wau"/>
-                                    <constraint firstItem="efr-sM-FtE" firstAttribute="leading" secondItem="TPo-H6-IRD" secondAttribute="leading" constant="1" id="R2j-ZE-MZz"/>
-                                    <constraint firstAttribute="trailing" secondItem="YIk-xA-Tiy" secondAttribute="trailing" constant="1" id="SiC-si-8PX"/>
+                                    <constraint firstItem="efr-sM-FtE" firstAttribute="leading" secondItem="TPo-H6-IRD" secondAttribute="leading" id="R2j-ZE-MZz"/>
+                                    <constraint firstAttribute="trailing" secondItem="YIk-xA-Tiy" secondAttribute="trailing" id="SiC-si-8PX"/>
                                     <constraint firstItem="YIk-xA-Tiy" firstAttribute="height" secondItem="RrN-U1-y1j" secondAttribute="height" id="TtR-qs-pix"/>
                                     <constraint firstItem="YIk-xA-Tiy" firstAttribute="top" secondItem="6Uj-JJ-Ja9" secondAttribute="bottom" constant="1" id="cFT-kO-0AY"/>
-                                    <constraint firstItem="9XX-NT-dal" firstAttribute="leading" secondItem="TPo-H6-IRD" secondAttribute="leading" constant="1" id="dFG-Xg-YW2"/>
-                                    <constraint firstItem="YIk-xA-Tiy" firstAttribute="leading" secondItem="TPo-H6-IRD" secondAttribute="leading" constant="1" id="gVf-OH-cTu"/>
+                                    <constraint firstItem="9XX-NT-dal" firstAttribute="leading" secondItem="TPo-H6-IRD" secondAttribute="leading" id="dFG-Xg-YW2"/>
+                                    <constraint firstItem="YIk-xA-Tiy" firstAttribute="leading" secondItem="TPo-H6-IRD" secondAttribute="leading" id="gVf-OH-cTu"/>
                                     <constraint firstItem="6Uj-JJ-Ja9" firstAttribute="height" secondItem="RrN-U1-y1j" secondAttribute="height" id="jTC-Wm-laO"/>
                                     <constraint firstItem="efr-sM-FtE" firstAttribute="height" secondItem="RrN-U1-y1j" secondAttribute="height" id="kT0-SL-mRw"/>
-                                    <constraint firstItem="6Uj-JJ-Ja9" firstAttribute="leading" secondItem="TPo-H6-IRD" secondAttribute="leading" constant="1" id="mkD-Fi-mA2"/>
-                                    <constraint firstItem="RrN-U1-y1j" firstAttribute="leading" secondItem="TPo-H6-IRD" secondAttribute="leading" constant="1" id="nD7-Db-fHe"/>
+                                    <constraint firstItem="6Uj-JJ-Ja9" firstAttribute="leading" secondItem="TPo-H6-IRD" secondAttribute="leading" id="mkD-Fi-mA2"/>
+                                    <constraint firstItem="RrN-U1-y1j" firstAttribute="leading" secondItem="TPo-H6-IRD" secondAttribute="leading" id="nD7-Db-fHe"/>
                                     <constraint firstItem="9XX-NT-dal" firstAttribute="top" secondItem="efr-sM-FtE" secondAttribute="bottom" constant="1" id="xd8-BG-0tT"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.31372550129999999" green="0.2941176593" blue="0.2901961207" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PdE-ll-M4f" secondAttribute="trailing" constant="1" id="4ZR-lt-wPC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PdE-ll-M4f" secondAttribute="trailing" constant="20" id="4ZR-lt-wPC"/>
                             <constraint firstItem="PdE-ll-M4f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="1" id="A1u-h5-3hB"/>
                             <constraint firstItem="TPo-H6-IRD" firstAttribute="top" secondItem="PdE-ll-M4f" secondAttribute="bottom" constant="8" symbolic="YES" id="Lrj-G0-qua"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TPo-H6-IRD" secondAttribute="bottom" constant="1" id="Oob-p0-dj6"/>
@@ -309,16 +321,31 @@
                     </view>
                     <connections>
                         <outlet property="displayResultLabel" destination="PdE-ll-M4f" id="i25-wz-754"/>
+                        <outletCollection property="button" destination="B7N-9i-Ftj" collectionClass="NSMutableArray" id="VdD-yV-lhG"/>
+                        <outletCollection property="button" destination="jOP-yF-obZ" collectionClass="NSMutableArray" id="Mpu-3W-tSe"/>
+                        <outletCollection property="button" destination="b53-md-rkq" collectionClass="NSMutableArray" id="rkp-ih-aVb"/>
+                        <outletCollection property="button" destination="64k-3y-vUB" collectionClass="NSMutableArray" id="WJ4-aO-sXh"/>
+                        <outletCollection property="button" destination="acm-ek-qcJ" collectionClass="NSMutableArray" id="7S8-bO-X9I"/>
+                        <outletCollection property="button" destination="A1d-1Q-fDp" collectionClass="NSMutableArray" id="vqN-Pc-GZ4"/>
+                        <outletCollection property="button" destination="RPV-hx-V9y" collectionClass="NSMutableArray" id="qQo-v2-wkv"/>
+                        <outletCollection property="button" destination="IJd-b2-8R8" collectionClass="NSMutableArray" id="blk-HH-kMd"/>
+                        <outletCollection property="button" destination="zoH-Uz-FgO" collectionClass="NSMutableArray" id="MVc-af-TqM"/>
+                        <outletCollection property="button" destination="EgL-SS-g6m" collectionClass="NSMutableArray" id="azv-Ky-VMv"/>
+                        <outletCollection property="button" destination="CJB-SH-M14" collectionClass="NSMutableArray" id="PFD-nZ-bl2"/>
+                        <outletCollection property="button" destination="4nE-wS-ZWb" collectionClass="NSMutableArray" id="ajy-3l-oBy"/>
+                        <outletCollection property="button" destination="Ll8-wv-vCy" collectionClass="NSMutableArray" id="M2Q-26-oLr"/>
+                        <outletCollection property="button" destination="Ios-bZ-S0a" collectionClass="NSMutableArray" id="M2Y-ee-O5K"/>
+                        <outletCollection property="button" destination="ZNb-To-BMm" collectionClass="NSMutableArray" id="8Xe-5Z-ZWH"/>
+                        <outletCollection property="button" destination="ddW-Qw-yVI" collectionClass="NSMutableArray" id="wLe-r1-RjL"/>
+                        <outletCollection property="button" destination="iKr-QH-ICa" collectionClass="NSMutableArray" id="Qeb-4U-axo"/>
+                        <outletCollection property="button" destination="vHK-E9-DGT" collectionClass="NSMutableArray" id="xl4-kc-xkx"/>
+                        <outletCollection property="button" destination="To4-No-G1f" collectionClass="NSMutableArray" id="Cie-DH-scy"/>
+                        <outletCollection property="button" destination="Sqw-Za-ds7" collectionClass="NSMutableArray" id="mfJ-ls-fg8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="104.296875" y="3.5139092240117127"/>
+            <point key="canvasLocation" x="103.25581395348837" y="3.218884120171674"/>
         </scene>
     </scenes>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>
