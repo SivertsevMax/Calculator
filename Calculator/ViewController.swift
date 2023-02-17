@@ -2,6 +2,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
+
+    
     @IBOutlet var button: [UIButton]!
     
     override func viewDidLoad() {
@@ -38,13 +40,14 @@ class ViewController: UIViewController {
         
         let number = sender.currentTitle!
         
-        if stillTyping {
+        if stillTyping || dotAdded {
             if (displayResultLabel.text?.count)! < 20 {
                 displayResultLabel.text = displayResultLabel.text! + number
             }
         } else {
             displayResultLabel.text = number
             stillTyping = true
+            dotAdded = false
         }
     }
     
@@ -109,9 +112,11 @@ class ViewController: UIViewController {
         if !dotAdded && stillTyping {
             displayResultLabel.text = displayResultLabel.text! + "."
             dotAdded = true
+            stillTyping = true
         } else if !dotAdded && !stillTyping {
             displayResultLabel.text = "0."
             dotAdded = true
+            stillTyping = true
         }
     }
     
